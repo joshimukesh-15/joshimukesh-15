@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="radarFill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#EF4444" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7B2CBF" stop-opacity="0.1"/>
+    </radialGradient>
+    <filter id="radarGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Background surface -->
+  <rect width="420" height="300" rx="18" fill="#141826" stroke="#22283A" stroke-width="1.2"/>
+
+  <!-- Title -->
+  <text x="210" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#4DEEEA" text-anchor="middle" letter-spacing="2">
+    // GUILD COMBAT RADAR
+  </text>
+
+  <!-- Radar Grid Pentagon Rings (Center: 210, 160) -->
+  <g fill="none" stroke="#2A334B" stroke-width="1">
+    <!-- Ring 1 (Outer - 100%) -->
+    <polygon points="210,75 295,136 262,238 158,238 125,136"/>
+    <!-- Ring 2 (75%) -->
+    <polygon points="210,96 274,142 249,218 171,218 146,142"/>
+    <!-- Ring 3 (50%) -->
+    <polygon points="210,118 252,148 236,199 184,199 168,148"/>
+    <!-- Ring 4 (25%) -->
+    <polygon points="210,139 231,154 223,179 197,179 189,154"/>
+
+    <!-- Axis Lines -->
+    <line x1="210" y1="160" x2="210" y2="75" stroke="#374151" stroke-dasharray="2 3"/>
+    <line x1="210" y1="160" x2="295" y2="136" stroke="#374151" stroke-dasharray="2 3"/>
+    <line x1="210" y1="160" x2="262" y2="238" stroke="#374151" stroke-dasharray="2 3"/>
+    <line x1="210" y1="160" x2="158" y2="238" stroke="#374151" stroke-dasharray="2 3"/>
+    <line x1="210" y1="160" x2="125" y2="136" stroke="#374151" stroke-dasharray="2 3"/>
+  </g>
+
+  <!-- Active Data Polygon (Mukesh's High Output Shape) -->
+  <polygon points="210,82 288,138 255,230 168,232 135,138" fill="url(#radarFill)" stroke="#F59E0B" stroke-width="2" filter="url(#radarGlow)"/>
+
+  <!-- Data Points -->
+  <circle cx="210" cy="82" r="4.5" fill="#FFE494"/>
+  <circle cx="288" cy="138" r="4.5" fill="#FFE494"/>
+  <circle cx="255" cy="230" r="4.5" fill="#FFE494"/>
+  <circle cx="168" cy="232" r="4.5" fill="#FFE494"/>
+  <circle cx="135" cy="138" r="4.5" fill="#FFE494"/>
+
+  <!-- Axis Labels -->
+  <!-- Top: Commits -->
+  <text x="210" y="65" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F3F4F6" text-anchor="middle">Commits (96%)</text>
+  <!-- Top-Right: Issues / Solves -->
+  <text x="305" y="138" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F3F4F6" text-anchor="start">Issues (90%)</text>
+  <!-- Bottom-Right: Pull Requests -->
+  <text x="272" y="258" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F3F4F6" text-anchor="start">PullReq (92%)</text>
+  <!-- Bottom-Left: Reviews -->
+  <text x="148" y="258" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F3F4F6" text-anchor="end">Review (85%)</text>
+  <!-- Top-Left: Repos / Builds -->
+  <text x="115" y="138" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F3F4F6" text-anchor="end">Repos (88%)</text>
+
+  <!-- Bottom Rank Badge -->
+  <text x="210" y="285" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#FFE494" text-anchor="middle">
+    OVERALL POTENTIAL: FIRST-CLASS MAGE LEVEL
+  </text>
+</svg>

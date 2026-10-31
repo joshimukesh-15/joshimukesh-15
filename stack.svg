@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E111A"/>
+      <stop offset="50%" stop-color="#121624"/>
+      <stop offset="100%" stop-color="#0B0D14"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4DEEEA" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7B2CBF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFE494" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Magic Light Beam projecting from wand over tech pills -->
+    <linearGradient id="wandBeam" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4DEEEA" stop-opacity="0.9"/>
+      <stop offset="15%" stop-color="#818CF8" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#4DEEEA" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFE494" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="spellCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#4DEEEA"/>
+      <stop offset="80%" stop-color="#7B2CBF"/>
+      <stop offset="100%" stop-color="#4DEEEA" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="wandGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @keyframes beamPulse {
+        0%, 100% { opacity: 0.55; transform: scaleY(1); }
+        50% { opacity: 0.85; transform: scaleY(1.06); }
+      }
+      @keyframes floatWand {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      .beaming { transform-origin: 290px 210px; animation: beamPulse 3.5s ease-in-out infinite; }
+      .wandFloat { animation: floatWand 4.2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Card Outer Surface -->
+  <rect x="2" y="2" width="936" height="376" rx="26" fill="url(#cardBg2)" stroke="url(#borderGrad2)" stroke-width="2"/>
+
+  <!-- ================= MAGIC CONE BEAM (Light Projector from Staff to Stack) ================= -->
+  <path d="M 290 205 L 890 100 L 910 330 L 290 215 Z" fill="url(#wandBeam)" class="beaming" pointer-events="none"/>
+
+  <!-- ================= LEFT: FERN / MAGE CASTING SPELL ================= -->
+  <g class="wandFloat">
+    <!-- Character Background Aura -->
+    <circle cx="160" cy="190" r="110" fill="#7B2CBF" opacity="0.12"/>
+    <circle cx="160" cy="190" r="85" fill="#4DEEEA" opacity="0.08"/>
+
+    <!-- Mage Cloak & Robe (Deep Navy / Violet of Fern) -->
+    <path d="M 90 210 Q 155 170 215 205 L 235 365 Q 160 375 80 365 Z" fill="#141829" stroke="#252D45" stroke-width="1.5"/>
+    <!-- Scarf / Trim -->
+    <path d="M 125 210 Q 160 225 195 210 L 200 222 Q 160 238 120 222 Z" fill="#EDE9FE" opacity="0.85"/>
+    <path d="M 135 224 L 160 310 L 185 224 Z" fill="#4DEEEA" opacity="0.75"/>
+
+    <!-- Long Dark Violet Hair (Fern style) -->
+    <path d="M 115 110 Q 75 160 70 270 Q 90 280 110 240 Q 125 180 135 140 Z" fill="#2E1065" stroke="#4C1D95" stroke-width="1.2"/>
+    <path d="M 185 110 Q 235 160 235 270 Q 215 280 195 240 Q 180 180 170 140 Z" fill="#2E1065" stroke="#4C1D95" stroke-width="1.2"/>
+
+    <!-- Face & Hair Bangs -->
+    <path d="M 132 125 Q 160 162 185 125 Q 175 105 140 105 Z" fill="#FCE7F3"/>
+    <path d="M 122 105 Q 160 85 195 105 Q 185 130 175 135 Q 160 118 145 135 Z" fill="#3B0764"/>
+
+    <!-- Purple Focus Eyes -->
+    <ellipse cx="148" cy="125" rx="3.5" ry="4.5" fill="#8B5CF6"/>
+    <circle cx="149" cy="124" r="1.2" fill="#FFFFFF"/>
+    <ellipse cx="168" cy="125" rx="3.5" ry="4.5" fill="#8B5CF6"/>
+    <circle cx="169" cy="124" r="1.2" fill="#FFFFFF"/>
+
+    <!-- Raised Staff channeling Zoltraak / Magic Core -->
+    <line x1="165" y1="280" x2="285" y2="210" stroke="#FFE494" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 270 200 C 265 210, 275 225, 285 220 C 298 215, 298 195, 288 195 Z" fill="none" stroke="#FFE494" stroke-width="2.5"/>
+
+    <!-- Glowing Spell Burst at Tip -->
+    <g filter="url(#wandGlow)">
+      <circle cx="288" cy="210" r="18" fill="url(#spellCore)"/>
+      <circle cx="288" cy="210" r="7" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Concentric Magic Rings at spell origin -->
+    <circle cx="288" cy="210" r="28" fill="none" stroke="#4DEEEA" stroke-width="1" stroke-dasharray="4 4" opacity="0.8"/>
+    <circle cx="288" cy="210" r="38" fill="none" stroke="#FFE494" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.6"/>
+  </g>
+
+  <!-- ================= RIGHT: TECH STACK PILLS ================= -->
+  <g transform="translate(355, 36)">
+    
+    <!-- Header -->
+    <g>
+      <text x="0" y="22" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#4DEEEA" letter-spacing="3">// GRIMOIRE OF SPELLS</text>
+      <text x="545" y="22" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#FFE494" text-anchor="end" letter-spacing="1">15+ WEAPONIZED TECHNOLOGIES</text>
+      <text x="0" y="58" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Tools I cast with</text>
+    </g>
+
+    <!-- ROW 1: CORE MAGIC (Languages) -->
+    <g transform="translate(0, 84)">
+      <!-- HTML5 -->
+      <g transform="translate(0, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#E34F26" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#E34F26" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#E34F26" text-anchor="middle">5</text>
+        <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">HTML5</text>
+      </g>
+      <!-- CSS3 -->
+      <g transform="translate(110, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#1572B6" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#1572B6" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">#</text>
+        <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">CSS3</text>
+      </g>
+      <!-- JavaScript -->
+      <g transform="translate(220, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#F7DF1E" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#F7DF1E" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FACC15" text-anchor="middle">JS</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">JavaScript</text>
+      </g>
+      <!-- TypeScript -->
+      <g transform="translate(340, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#3178C6" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#3178C6" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#60A5FA" text-anchor="middle">TS</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">TypeScript</text>
+      </g>
+      <!-- Python -->
+      <g transform="translate(460, 0)">
+        <rect width="85" height="42" rx="10" fill="#181D2D" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.6"/>
+        <circle cx="20" cy="21" r="11" fill="#38BDF8" fill-opacity="0.15"/>
+        <text x="20" y="25" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#38BDF8" text-anchor="middle">Py</text>
+        <text x="38" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Python</text>
+      </g>
+    </g>
+
+    <!-- ROW 2: CONJURING FRAMEWORKS -->
+    <g transform="translate(0, 142)">
+      <!-- React -->
+      <g transform="translate(0, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#61DAFB" stroke-width="1.2" stroke-opacity="0.7"/>
+        <circle cx="22" cy="21" r="11" fill="#61DAFB" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="13" fill="#61DAFB" text-anchor="middle">⚛</text>
+        <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">React</text>
+      </g>
+      <!-- Next.js -->
+      <g transform="translate(110, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.4"/>
+        <circle cx="22" cy="21" r="11" fill="#FFFFFF" fill-opacity="0.12"/>
+        <text x="22" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">N</text>
+        <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Next.js</text>
+      </g>
+      <!-- Tailwind CSS -->
+      <g transform="translate(220, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#06B6D4" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#06B6D4" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#22D3EE" text-anchor="middle">≋</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Tailwind</text>
+      </g>
+      <!-- FastAPI -->
+      <g transform="translate(340, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#059669" stroke-width="1" stroke-opacity="0.6"/>
+        <circle cx="22" cy="21" r="11" fill="#059669" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#34D399" text-anchor="middle">⚡</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">FastAPI</text>
+      </g>
+      <!-- Node.js -->
+      <g transform="translate(460, 0)">
+        <rect width="85" height="42" rx="10" fill="#181D2D" stroke="#22C55E" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="20" cy="21" r="11" fill="#22C55E" fill-opacity="0.15"/>
+        <text x="20" y="25" font-family="'Inter', sans-serif" font-size="11" fill="#4ADE80" text-anchor="middle">⬢</text>
+        <text x="38" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Node.js</text>
+      </g>
+    </g>
+
+    <!-- ROW 3: ARTIFACTS & RELICS (Databases & Tools) -->
+    <g transform="translate(0, 200)">
+      <!-- PostgreSQL -->
+      <g transform="translate(0, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#336791" stroke-width="1" stroke-opacity="0.6"/>
+        <circle cx="22" cy="21" r="11" fill="#336791" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="11" fill="#60A5FA" text-anchor="middle">🐘</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E5E7EB">Postgres</text>
+      </g>
+      <!-- Docker -->
+      <g transform="translate(110, 0)">
+        <rect width="102" height="42" rx="10" fill="#181D2D" stroke="#2496ED" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#2496ED" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#38BDF8" text-anchor="middle">🐋</text>
+        <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Docker</text>
+      </g>
+      <!-- Git & GitHub -->
+      <g transform="translate(220, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#F05032" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#F05032" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#F87171" text-anchor="middle">⌥</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Git / Hub</text>
+      </g>
+      <!-- Framer Motion -->
+      <g transform="translate(340, 0)">
+        <rect width="112" height="42" rx="10" fill="#181D2D" stroke="#EC4899" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="22" cy="21" r="11" fill="#EC4899" fill-opacity="0.15"/>
+        <text x="22" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#F472B6" text-anchor="middle">▲</text>
+        <text x="43" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Framer</text>
+      </g>
+      <!-- Vercel / Vite -->
+      <g transform="translate(460, 0)">
+        <rect width="85" height="42" rx="10" fill="#181D2D" stroke="#BD34FE" stroke-width="1" stroke-opacity="0.5"/>
+        <circle cx="20" cy="21" r="11" fill="#BD34FE" fill-opacity="0.15"/>
+        <text x="20" y="25" font-family="'Inter', sans-serif" font-size="11" fill="#C084FC" text-anchor="middle">⚡</text>
+        <text x="38" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E5E7EB">Vite</text>
+      </g>
+    </g>
+
+    <!-- Bottom Grimoire Status Pill -->
+    <g transform="translate(0, 264)">
+      <rect x="0" y="0" width="545" height="40" rx="12" fill="#121624" stroke="#252D42" stroke-width="1"/>
+      <circle cx="18" cy="20" r="4" fill="#4DEEEA"/>
+      <text x="30" y="24" font-family="'JetBrains Mono', monospace" font-size="11" fill="#9CA3AF">All grimoire spells weaponized for production-grade velocity.</text>
+    </g>
+
+  </g>
+</svg>
