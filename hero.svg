@@ -1,232 +1,229 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 460" width="100%" height="100%">
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0E111A"/>
-      <stop offset="50%" stop-color="#121624"/>
-      <stop offset="100%" stop-color="#0B0D14"/>
+    <!-- Background Gradient: Deep Cosmic Void -->
+    <linearGradient id="voidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070D"/>
+      <stop offset="50%" stop-color="#0B0E1B"/>
+      <stop offset="100%" stop-color="#040509"/>
     </linearGradient>
 
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4DEEEA" stop-opacity="0.8"/>
-      <stop offset="35%" stop-color="#7B2CBF" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#FFD166" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#242B42" stop-opacity="0.8"/>
+    <!-- Border Gradient: Six Eyes Cyan to Hollow Purple to Blood Red -->
+    <linearGradient id="limitlessBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#A855F7" stop-opacity="0.7"/>
+      <stop offset="75%" stop-color="#EC4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.9"/>
     </linearGradient>
 
-    <linearGradient id="manaGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4DEEEA"/>
-      <stop offset="100%" stop-color="#A78BFA"/>
-    </linearGradient>
-
-    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFE494"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
-    </linearGradient>
-
-    <radialGradient id="aurora" cx="25%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="#4DEEEA" stop-opacity="0.22"/>
-      <stop offset="40%" stop-color="#7B2CBF" stop-opacity="0.12"/>
+    <!-- Hollow Purple Singularity Gradient -->
+    <radialGradient id="hollowPurpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#C084FC"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="spellCircleGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4DEEEA" stop-opacity="0.6"/>
-      <stop offset="70%" stop-color="#818CF8" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#4DEEEA" stop-opacity="0"/>
+    <!-- Six Eyes Cyan Aurora -->
+    <radialGradient id="sixEyesGlow" cx="24%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#7C3AED" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Filters -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="sixEyesBloom" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="hyperGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
     <style>
-      @keyframes floatSlow {
+      @keyframes voidFloat {
         0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-7px); }
       }
-      @keyframes runeRotate {
+      @keyframes infinityRotate {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-      @keyframes runeReverse {
+      @keyframes infinityReverse {
         0% { transform: rotate(360deg); }
         100% { transform: rotate(0deg); }
       }
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.7; }
-        50% { opacity: 1; }
+      @keyframes cursedFlicker {
+        0%, 100% { opacity: 0.75; }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px #00F0FF); }
       }
-      @keyframes sparkle {
-        0%, 100% { opacity: 0.2; transform: scale(0.8); }
-        50% { opacity: 1; transform: scale(1.2); }
+      @keyframes orbOrbit {
+        0% { transform: rotate(0deg) translateX(70px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
       }
-      .floating { animation: floatSlow 5s ease-in-out infinite; }
-      .rotating { transform-origin: 175px 215px; animation: runeRotate 32s linear infinite; }
-      .reverse-rotating { transform-origin: 175px 215px; animation: runeReverse 24s linear infinite; }
-      .pulsing { animation: pulseGlow 3s ease-in-out infinite; }
-      .spark1 { animation: sparkle 2.4s ease-in-out infinite; }
-      .spark2 { animation: sparkle 3.1s ease-in-out infinite 0.7s; }
-      .spark3 { animation: sparkle 2.8s ease-in-out infinite 1.4s; }
+      @keyframes orbOrbitReverse {
+        0% { transform: rotate(360deg) translateX(85px) rotate(-360deg); }
+        100% { transform: rotate(0deg) translateX(85px) rotate(0deg); }
+      }
+      .floating { animation: voidFloat 5s ease-in-out infinite; }
+      .rotating { transform-origin: 175px 215px; animation: infinityRotate 30s linear infinite; }
+      .reverse-rotating { transform-origin: 175px 215px; animation: infinityReverse 22s linear infinite; }
+      .blueOrb { transform-origin: 175px 215px; animation: orbOrbit 6s linear infinite; }
+      .redOrb { transform-origin: 175px 215px; animation: orbOrbitReverse 7s linear infinite; }
+      .eyeGlow { animation: cursedFlicker 2.5s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Card Canvas -->
-  <rect x="2" y="2" width="936" height="456" rx="26" fill="url(#cardBg)" stroke="url(#borderGrad)" stroke-width="2"/>
-  <rect x="2" y="2" width="936" height="456" rx="26" fill="url(#aurora)" pointer-events="none"/>
+  <!-- Void Outer Frame -->
+  <rect x="2" y="2" width="936" height="456" rx="26" fill="url(#voidBg)" stroke="url(#limitlessBorder)" stroke-width="2"/>
+  <rect x="2" y="2" width="936" height="456" rx="26" fill="url(#sixEyesGlow)" pointer-events="none"/>
 
-  <!-- Subtle Starlight Grid / Starfield -->
-  <g opacity="0.35">
-    <circle cx="80" cy="70" r="1" fill="#FFFFFF"/>
-    <circle cx="210" cy="50" r="1.5" fill="#4DEEEA" class="spark1"/>
-    <circle cx="380" cy="80" r="1" fill="#FFFFFF"/>
-    <circle cx="560" cy="45" r="1.2" fill="#FFE494" class="spark2"/>
-    <circle cx="720" cy="75" r="1" fill="#FFFFFF"/>
-    <circle cx="890" cy="50" r="1.5" fill="#4DEEEA" class="spark3"/>
-    <circle cx="120" cy="380" r="1.2" fill="#FFFFFF"/>
-    <circle cx="340" cy="410" r="1" fill="#A78BFA"/>
-    <circle cx="500" cy="420" r="1.5" fill="#4DEEEA" class="spark2"/>
-    <circle cx="780" cy="410" r="1" fill="#FFE494"/>
-    <circle cx="910" cy="360" r="1.2" fill="#FFFFFF"/>
-  </g>
-
-  <!-- ================= LEFT: FRIEREN & MAGICAL RUNES ================= -->
+  <!-- ================= LEFT: SATORU GOJO & UNLIMITED VOID ================= -->
   <g class="floating">
-    <!-- Outer Magical Runic Ring (Rotating) -->
-    <g class="rotating" opacity="0.65">
-      <circle cx="175" cy="215" r="145" fill="none" stroke="#4DEEEA" stroke-width="1.2" stroke-dasharray="8 6 2 6"/>
-      <circle cx="175" cy="215" r="132" fill="none" stroke="#818CF8" stroke-width="0.8"/>
-      <!-- Cardinal Rune Marks -->
-      <polygon points="175,70 179,80 171,80" fill="#4DEEEA"/>
-      <polygon points="175,360 179,350 171,350" fill="#4DEEEA"/>
-      <polygon points="30,215 40,219 40,211" fill="#4DEEEA"/>
-      <polygon points="320,215 310,219 310,211" fill="#4DEEEA"/>
-      <!-- Diamond Star Glyphs -->
-      <polygon points="275,115 280,120 275,125 270,120" fill="#FFE494"/>
-      <polygon points="75,315 80,320 75,325 70,320" fill="#FFE494"/>
-      <polygon points="275,315 280,320 275,325 270,320" fill="#FFE494"/>
-      <polygon points="75,115 80,120 75,125 70,120" fill="#FFE494"/>
+    <!-- Cosmic Void / Infinity Rings (Rotating) -->
+    <g class="rotating" opacity="0.6">
+      <circle cx="175" cy="215" r="145" fill="none" stroke="#00F0FF" stroke-width="1.2" stroke-dasharray="10 6 3 6"/>
+      <circle cx="175" cy="215" r="130" fill="none" stroke="#A855F7" stroke-width="0.8"/>
+      <!-- Cardinal Domain Spikes -->
+      <polygon points="175,65 179,78 171,78" fill="#00F0FF"/>
+      <polygon points="175,365 179,352 171,352" fill="#00F0FF"/>
+      <polygon points="25,215 38,219 38,211" fill="#00F0FF"/>
+      <polygon points="325,215 312,219 312,211" fill="#00F0FF"/>
     </g>
 
-    <!-- Inner Concentric Runic Ring (Reverse Rotating) -->
+    <!-- Inner Reverse Void Ring -->
     <g class="reverse-rotating" opacity="0.75">
-      <circle cx="175" cy="215" r="115" fill="none" stroke="#FFE494" stroke-width="1" stroke-dasharray="12 4 4 4"/>
-      <polygon points="175,102 273,260 77,260" fill="none" stroke="#4DEEEA" stroke-width="0.8" opacity="0.5"/>
-      <polygon points="175,328 77,170 273,170" fill="none" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
-      <circle cx="175" cy="215" r="70" fill="url(#spellCircleGlow)"/>
+      <circle cx="175" cy="215" r="112" fill="none" stroke="#EC4899" stroke-width="1" stroke-dasharray="8 4"/>
+      <!-- Infinity Symbol Symbolism -->
+      <path d="M 145 215 Q 160 200 175 215 Q 190 230 205 215 Q 220 200 205 185 Q 190 185 175 215 Q 160 245 145 245 Q 130 230 145 215 Z" fill="none" stroke="#00F0FF" stroke-width="1.2" opacity="0.4"/>
+      <circle cx="175" cy="215" r="75" fill="url(#hollowPurpleGlow)" opacity="0.2"/>
     </g>
 
-    <!-- Glowing Staff Core -->
-    <g filter="url(#glow)">
-      <circle cx="270" cy="120" r="14" fill="#4DEEEA" opacity="0.9"/>
-      <circle cx="270" cy="120" r="6" fill="#FFFFFF"/>
-      <line x1="270" y1="120" x2="210" y2="390" stroke="#FFE494" stroke-width="4.5" stroke-linecap="round"/>
-      <path d="M 252 100 C 248 115, 256 135, 270 140 C 285 135, 292 115, 288 100 C 278 85, 262 85, 252 100 Z" fill="none" stroke="#FFE494" stroke-width="3"/>
+    <!-- Orbiting Blue (Lapse) & Red (Reversal) Spheres -->
+    <g class="blueOrb">
+      <circle cx="175" cy="215" r="9" fill="#00F0FF" filter="url(#hyperGlow)"/>
+      <circle cx="175" cy="215" r="3" fill="#FFFFFF"/>
+    </g>
+    <g class="redOrb">
+      <circle cx="175" cy="215" r="9" fill="#EF4444" filter="url(#hyperGlow)"/>
+      <circle cx="175" cy="215" r="3" fill="#FFFFFF"/>
     </g>
 
-    <!-- Stylized Anime Character Silhouette & Highlights (Frieren) -->
+    <!-- Satoru Gojo Stylized Vector Figure -->
     <g>
-      <!-- Cape & Body Base -->
-      <path d="M 125 240 Q 170 210 220 235 L 245 425 Q 175 440 100 425 Z" fill="#181D2D" stroke="#2D354E" stroke-width="1.5"/>
-      <path d="M 140 245 L 175 340 L 210 245 Z" fill="#EDE9FE" opacity="0.9"/>
-      <path d="M 160 245 L 175 315 L 190 245 Z" fill="#4DEEEA" opacity="0.6"/>
+      <!-- Dark High Collar Coat -->
+      <path d="M 105 245 Q 175 205 245 245 L 265 435 Q 175 448 85 435 Z" fill="#0B1020" stroke="#1E2A4A" stroke-width="1.8"/>
+      <!-- Coat Zipper & Seams -->
+      <line x1="175" y1="235" x2="175" y2="435" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 145 240 L 175 285 L 205 240" fill="none" stroke="#00F0FF" stroke-width="1.2" opacity="0.6"/>
 
-      <!-- Gold Trim & Scarf -->
-      <path d="M 135 240 Q 175 258 215 240 L 220 252 Q 175 270 130 252 Z" fill="url(#goldGlow)"/>
+      <!-- Raised Hand: Domain Expansion Sign 🤞 (Crossed Fingers) -->
+      <g transform="translate(198, 205)" filter="url(#sixEyesBloom)">
+        <!-- Arm / Sleeve -->
+        <path d="M 0 35 L 20 5 L 32 15 L 12 45 Z" fill="#0B1020"/>
+        <!-- Hand -->
+        <circle cx="24" cy="4" r="8" fill="#FED7AA"/>
+        <!-- Crossed Index and Middle Fingers -->
+        <line x1="23" y1="4" x2="21" y2="-18" stroke="#FED7AA" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="27" y1="4" x2="20" y2="-21" stroke="#FED7AA" stroke-width="3" stroke-linecap="round"/>
+        <!-- Infinity Spark at fingertip -->
+        <circle cx="21" cy="-22" r="5" fill="#00F0FF"/>
+        <circle cx="21" cy="-22" r="2" fill="#FFFFFF"/>
+      </g>
 
-      <!-- Twin Silver Hair / Twin Tails -->
-      <path d="M 145 135 Q 110 180 85 270 Q 105 280 120 240 Q 140 180 152 155 Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.2"/>
-      <path d="M 195 135 Q 235 180 255 275 Q 240 285 225 245 Q 205 180 190 155 Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.2"/>
+      <!-- Head Base -->
+      <path d="M 148 152 Q 175 192 202 152 Q 195 125 155 125 Z" fill="#FED7AA"/>
 
-      <!-- Elven Face & Hair Fringe -->
-      <path d="M 152 145 Q 172 178 190 145 Q 185 125 155 125 Z" fill="#FCE7F3"/>
-      <!-- Soft Elf Ears -->
-      <polygon points="144,142 122,132 146,149" fill="#FCE7F3" stroke="#F472B6" stroke-width="0.8"/>
-      <polygon points="198,142 220,132 196,149" fill="#FCE7F3" stroke="#F472B6" stroke-width="0.8"/>
-      <!-- Long Hair Fringe -->
-      <path d="M 142 125 Q 172 105 200 125 Q 192 148 185 152 Q 172 135 158 152 Z" fill="#FFFFFF"/>
+      <!-- Spiky Iconic Pure Snow White Hair (Upright / Unleashed) -->
+      <path d="M 132 142 Q 138 95 155 75 Q 165 105 175 65 Q 185 105 195 72 Q 212 95 218 142 Q 205 130 195 135 Q 175 120 155 135 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+      <path d="M 148 135 Q 155 88 168 78 Q 164 110 175 122 Z" fill="#F8FAFC"/>
+      <path d="M 202 135 Q 195 88 182 78 Q 186 110 175 122 Z" fill="#F8FAFC"/>
 
-      <!-- Emerald Earrings -->
-      <polygon points="128,148 132,156 128,164 124,156" fill="#10B981" filter="url(#softGlow)"/>
-      <polygon points="214,148 218,156 214,164 210,156" fill="#10B981" filter="url(#softGlow)"/>
+      <!-- Unmasked Satoru Gojo: Half Blindfold pulled down, Unleashing Six Eyes -->
+      <path d="M 142 140 Q 175 128 208 140 L 206 150 Q 175 138 144 150 Z" fill="#0A0E1A" stroke="#334155" stroke-width="1"/>
 
-      <!-- Calming Turquoise Eyes -->
-      <ellipse cx="163" cy="144" rx="3.5" ry="4.5" fill="#0EA5E9"/>
-      <circle cx="164" cy="143" r="1.2" fill="#FFFFFF"/>
-      <ellipse cx="179" cy="144" rx="3.5" ry="4.5" fill="#0EA5E9"/>
-      <circle cx="180" cy="143" r="1.2" fill="#FFFFFF"/>
+      <!-- THE SIX EYES (Electric Luminous Cyan Starlight) -->
+      <g filter="url(#hyperGlow)" class="eyeGlow">
+        <!-- Left Eye -->
+        <ellipse cx="163" cy="148" rx="5.5" ry="5.5" fill="#00F0FF"/>
+        <circle cx="163" cy="148" r="3.2" fill="#38BDF8"/>
+        <circle cx="163" cy="148" r="1.5" fill="#FFFFFF"/>
+        <!-- Right Eye -->
+        <ellipse cx="187" cy="148" rx="5.5" ry="5.5" fill="#00F0FF"/>
+        <circle cx="187" cy="148" r="3.2" fill="#38BDF8"/>
+        <circle cx="187" cy="148" r="1.5" fill="#FFFFFF"/>
+      </g>
 
-      <!-- Subtle Aura -->
-      <circle cx="172" cy="140" r="55" fill="none" stroke="#4DEEEA" stroke-width="1" opacity="0.3" class="pulsing"/>
+      <!-- Confident Smile -->
+      <path d="M 166 172 Q 175 178 184 172" stroke="#DC2626" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+      <!-- Limitless Infinity Aura Field -->
+      <circle cx="175" cy="165" r="72" fill="none" stroke="#00F0FF" stroke-width="1.2" opacity="0.4" stroke-dasharray="6 8"/>
     </g>
   </g>
 
   <!-- ================= RIGHT: BENTO DOSSIER & HEADLINE ================= -->
   <g transform="translate(365, 42)">
     
-    <!-- Breadcrumb Tag -->
+    <!-- Breadcrumb Tag with Kanji -->
     <g>
-      <text x="0" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#4DEEEA" letter-spacing="3">// THE MAGE'S JOURNEY</text>
-      <circle cx="215" cy="20" r="3" fill="#FFE494"/>
-      <text x="228" y="24" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71788E" letter-spacing="1.5">FIRST-CLASS DOSSIER</text>
+      <text x="0" y="24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF" letter-spacing="3">// SPECIAL GRADE JUJUTSU</text>
+      <circle cx="218" cy="20" r="3" fill="#EC4899"/>
+      <text x="230" y="24" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#A855F7" letter-spacing="2">天上天下唯我独尊</text>
     </g>
 
-    <!-- Main Headline -->
-    <text x="0" y="68" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="31" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
-      Ordinary magic — engineered for eternity.
+    <!-- Main Headline: Throughout Heaven and Earth -->
+    <text x="0" y="66" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      Throughout heaven and earth,
+    </text>
+    <text x="0" y="98" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="30" font-weight="800" fill="#00F0FF" letter-spacing="-0.5">
+      I alone build the strongest.
     </text>
 
     <!-- Subtitle -->
-    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="14.5" font-weight="400" fill="#9CA3AF" letter-spacing="0.2">
-      Full-Stack Developer by day, ancient magic-crafting engineer by night.
+    <text x="0" y="124" font-family="'Inter', sans-serif" font-size="13.5" font-weight="400" fill="#94A3B8" letter-spacing="0.2">
+      Full-Stack Developer by day, Special Grade domain engineer by night.
     </text>
 
-    <!-- Feature Row 1: Interfaces that feel alive -->
-    <g transform="translate(0, 126)">
-      <rect x="0" y="0" width="535" height="52" rx="14" fill="#161B2A" stroke="#252D42" stroke-width="1.2"/>
-      <!-- Icon pill -->
-      <rect x="10" y="9" width="34" height="34" rx="10" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-opacity="0.4"/>
-      <text x="27" y="32" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle">🪄</text>
+    <!-- Feature Row 1: Lapse Blue (UI Magnetism) -->
+    <g transform="translate(0, 144)">
+      <rect x="0" y="0" width="535" height="50" rx="14" fill="#0D1222" stroke="#1E2A4A" stroke-width="1.2"/>
+      <!-- Blue Icon pill -->
+      <rect x="10" y="8" width="34" height="34" rx="10" fill="#00F0FF" fill-opacity="0.15" stroke="#00F0FF" stroke-opacity="0.6"/>
+      <circle cx="27" cy="25" r="7" fill="#00F0FF"/>
       <!-- Title & Desc -->
-      <text x="56" y="23" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#F3F4F6">Interfaces that feel alive</text>
-      <text x="56" y="40" font-family="'Inter', sans-serif" font-size="11.5" font-weight="400" fill="#8E95A8">Responsive, pixel-perfect builds in React, Next.js, TypeScript &amp; Tailwind</text>
+      <text x="56" y="22" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Lapse Blue: Magnetic Reactivity</text>
+      <text x="56" y="38" font-family="'Inter', sans-serif" font-size="11" font-weight="400" fill="#94A3B8">Pixel-perfect, fluid interfaces in React, Next.js, TypeScript &amp; Tailwind</text>
     </g>
 
-    <!-- Feature Row 2: Motion with a story arc -->
-    <g transform="translate(0, 188)">
-      <rect x="0" y="0" width="535" height="52" rx="14" fill="#161B2A" stroke="#252D42" stroke-width="1.2"/>
-      <!-- Icon pill -->
-      <rect x="10" y="9" width="34" height="34" rx="10" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
-      <text x="27" y="32" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle">⏳</text>
+    <!-- Feature Row 2: Reversal Red (High Velocity Motion) -->
+    <g transform="translate(0, 204)">
+      <rect x="0" y="0" width="535" height="50" rx="14" fill="#0D1222" stroke="#1E2A4A" stroke-width="1.2"/>
+      <!-- Red Icon pill -->
+      <rect x="10" y="8" width="34" height="34" rx="10" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-opacity="0.6"/>
+      <circle cx="27" cy="25" r="7" fill="#EF4444"/>
       <!-- Title & Desc -->
-      <text x="56" y="23" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#F3F4F6">Motion with a story arc</text>
-      <text x="56" y="40" font-family="'Inter', sans-serif" font-size="11.5" font-weight="400" fill="#8E95A8">Scroll-driven scenes, transitions and micro-interactions with Framer Motion</text>
+      <text x="56" y="22" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Reversal Red: Kinetic Physics &amp; Motion</text>
+      <text x="56" y="38" font-family="'Inter', sans-serif" font-size="11" font-weight="400" fill="#94A3B8">Scroll-driven scenes, transitions and micro-interactions with Framer Motion</text>
     </g>
 
-    <!-- Feature Row 3: Enterprise-grade plumbing -->
-    <g transform="translate(0, 250)">
-      <rect x="0" y="0" width="535" height="52" rx="14" fill="#161B2A" stroke="#252D42" stroke-width="1.2"/>
-      <!-- Icon pill -->
-      <rect x="10" y="9" width="34" height="34" rx="10" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.4"/>
-      <text x="27" y="32" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle">📜</text>
+    <!-- Feature Row 3: Hollow Purple (Devastating Architecture) -->
+    <g transform="translate(0, 264)">
+      <rect x="0" y="0" width="535" height="50" rx="14" fill="#0D1222" stroke="#1E2A4A" stroke-width="1.2"/>
+      <!-- Purple Icon pill -->
+      <rect x="10" y="8" width="34" height="34" rx="10" fill="#A855F7" fill-opacity="0.15" stroke="#A855F7" stroke-opacity="0.6"/>
+      <circle cx="27" cy="25" r="7" fill="#A855F7"/>
       <!-- Title & Desc -->
-      <text x="56" y="23" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#F3F4F6">Ancient-grade plumbing</text>
-      <text x="56" y="40" font-family="'Inter', sans-serif" font-size="11.5" font-weight="400" fill="#8E95A8">SQL ledgers, FastAPI backends &amp; ERP integrations that stand the test of time</text>
+      <text x="56" y="22" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Hollow Purple: Devastating Infrastructure</text>
+      <text x="56" y="38" font-family="'Inter', sans-serif" font-size="11" font-weight="400" fill="#94A3B8">High-concurrency Python/FastAPI backends &amp; double-entry SQL ledgers</text>
     </g>
 
-    <!-- Bottom Quote & Status Pill (Like Naruto's in slide 1) -->
-    <g transform="translate(0, 318)">
-      <rect x="0" y="0" width="535" height="58" rx="14" fill="#141824" stroke="url(#manaGlow)" stroke-width="1.2" stroke-opacity="0.7"/>
-      <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#FFE494">"It's the small, ordinary spells that make the journey worthwhile."</text>
-      <text x="18" y="46" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#4DEEEA" letter-spacing="1.8">
-        FIRST-CLASS MAGE · 35+ REPOS · FULL-STACK · JOSHIMUKESH-15
+    <!-- Bottom Quote & Status Pill (Gojo's famous line) -->
+    <g transform="translate(0, 326)">
+      <rect x="0" y="0" width="535" height="54" rx="14" fill="#090D1A" stroke="url(#limitlessBorder)" stroke-width="1.2"/>
+      <text x="18" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#FFFFFF">"Don't worry, my code is the strongest." <tspan fill="#A855F7">大丈夫 僕 最強だから</tspan></text>
+      <text x="18" y="43" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#00F0FF" letter-spacing="1.8">
+        SPECIAL GRADE · 35+ REPOS · SIX EYES REGISTERED · JOSHIMUKESH-15
       </text>
     </g>
 
