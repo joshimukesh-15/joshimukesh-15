@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 940 440" width="940" height="440">
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 940 440" width="940" height="440">
   <defs>
     <linearGradient id="voidBg3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#05070D"/>
@@ -145,26 +145,26 @@
     <g transform="translate(0, 74)">
       <g transform="translate(0, 0)">
         <rect width="136" height="66" rx="14" fill="#0F1424" stroke="#1E2A4A" stroke-width="1.2"/>
-        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">35+</text>
-        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#00F0FF" letter-spacing="1">CURSED REPOS</text>
+        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">32+</text>
+        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#00F0FF" letter-spacing="1">PUBLIC REPOS</text>
         <text x="118" y="32" font-family="'Inter', sans-serif" font-size="14" text-anchor="end">📦</text>
       </g>
       <g transform="translate(148, 0)">
         <rect width="136" height="66" rx="14" fill="#0F1424" stroke="#1E2A4A" stroke-width="1.2"/>
-        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FACC15">100+</text>
-        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#EAB308" letter-spacing="1">STARS EARNED</text>
+        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FACC15">Full-Stack</text>
+        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#EAB308" letter-spacing="1">CORE FOCUS</text>
         <text x="118" y="32" font-family="'Inter', sans-serif" font-size="14" text-anchor="end">⭐</text>
       </g>
       <g transform="translate(296, 0)">
         <rect width="136" height="66" rx="14" fill="#0F1424" stroke="#1E2A4A" stroke-width="1.2"/>
-        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">50+</text>
-        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#A855F7" letter-spacing="1">FORKS / CITATIONS</text>
+        <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#A855F7">Active</text>
+        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#A855F7" letter-spacing="1">DUTY STATUS</text>
         <text x="118" y="32" font-family="'Inter', sans-serif" font-size="14" text-anchor="end">🍴</text>
       </g>
       <g transform="translate(444, 0)">
         <rect width="136" height="66" rx="14" fill="#0F1424" stroke="#1E2A4A" stroke-width="1.2"/>
         <text x="16" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#EF4444">Special</text>
-        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#EF4444" letter-spacing="1">GRADE RANK</text>
+        <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#EF4444" letter-spacing="1">SORCERER RANK</text>
         <text x="118" y="32" font-family="'Inter', sans-serif" font-size="14" text-anchor="end">🎖️</text>
       </g>
     </g>
