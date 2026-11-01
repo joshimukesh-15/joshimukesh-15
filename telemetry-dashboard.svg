@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="940" height="440">
   <defs>
     <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050711"/>
-      <stop offset="50%" stop-color="#090E1F"/>
-      <stop offset="100%" stop-color="#04060D"/>
+      <stop offset="0%" stop-color="#05070F"/>
+      <stop offset="50%" stop-color="#090E1D"/>
+      <stop offset="100%" stop-color="#04060C"/>
     </linearGradient>
 
     <linearGradient id="dashBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
-      <stop offset="40%" stop-color="#818CF8" stop-opacity="0.6"/>
-      <stop offset="80%" stop-color="#C084FC" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#818CF8" stop-opacity="0.5"/>
+      <stop offset="75%" stop-color="#FBBF24" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- Badge Lanyard Gradient -->
+    <!-- Luxury Lanyard Strap Gradient -->
     <linearGradient id="lanyardStrap" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="50%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
     </linearGradient>
 
-    <!-- Progress Meter Gradients -->
-    <linearGradient id="meterCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#00F0FF"/>
+    <!-- Refined Meter Gradients -->
+    <linearGradient id="meterGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
     </linearGradient>
-    <linearGradient id="meterPurple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#C084FC"/>
+    <linearGradient id="meterIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
     <linearGradient id="meterEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#059669"/>
       <stop offset="100%" stop-color="#34D399"/>
     </linearGradient>
-    <linearGradient id="meterPink" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#DB2777"/>
-      <stop offset="100%" stop-color="#F472B6"/>
+    <linearGradient id="meterCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
 
     <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
@@ -43,22 +43,17 @@
     </filter>
 
     <style>
-      @keyframes radarSweep {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
       @keyframes pulseLive {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0.4; }
+        50% { opacity: 0.35; }
       }
-      .radar-needle { transform-origin: 32px 32px; animation: radarSweep 8s linear infinite; }
       .live-glow { animation: pulseLive 2s ease-in-out infinite; }
     </style>
   </defs>
 
   <!-- Shell Container -->
-  <rect x="1" y="1" width="938" height="438" rx="28" fill="url(#dashBg)"/>
-  <rect x="1" y="1" width="938" height="438" rx="28" fill="none" stroke="url(#dashBorder)" stroke-width="1.2"/>
+  <rect x="1" y="1" width="938" height="438" rx="26" fill="url(#dashBg)"/>
+  <rect x="1" y="1" width="938" height="438" rx="26" fill="none" stroke="url(#dashBorder)" stroke-width="1.2"/>
 
   <!-- ================= LEFT: HARDWARE LANYARD ID BADGE ================= -->
   <g transform="translate(42, 28)">
@@ -67,36 +62,36 @@
     <path d="M125 0 L125 36" stroke="url(#lanyardStrap)" stroke-width="18" stroke-linecap="round"/>
     
     <!-- Metallic Hardware Clip / Swivel -->
-    <rect x="114" y="28" width="22" height="14" rx="4" fill="#64748B" stroke="#94A3B8" stroke-width="1"/>
+    <rect x="114" y="28" width="22" height="14" rx="4" fill="#475569" stroke="#94A3B8" stroke-width="1"/>
     <circle cx="125" cy="42" r="5" fill="none" stroke="#CBD5E1" stroke-width="2.5"/>
 
     <!-- ID Card Body (Double Bezel) -->
     <g transform="translate(10, 48)" filter="url(#badgeShadow)">
       <!-- Outer Card Tray -->
-      <rect x="0" y="0" width="230" height="336" rx="20" fill="#0C1222" stroke="#1E293B" stroke-width="1.5"/>
+      <rect x="0" y="0" width="230" height="336" rx="18" fill="#0C1220" stroke="#1E293B" stroke-width="1.5"/>
       <!-- Inner Machined Inset -->
-      <rect x="8" y="8" width="214" height="320" rx="14" fill="#090E1A" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+      <rect x="8" y="8" width="214" height="320" rx="12" fill="#080D18" stroke="#F59E0B" stroke-width="0.8" stroke-opacity="0.3"/>
 
       <!-- Badge Header Strip -->
-      <rect x="8" y="8" width="214" height="28" rx="14" fill="#0F172A"/>
+      <rect x="8" y="8" width="214" height="28" rx="12" fill="#0F172A"/>
       <circle cx="26" cy="22" r="3" fill="#10B981" class="live-glow"/>
-      <text x="36" y="25" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#38BDF8" letter-spacing="1">SYSTEMS ENGINEER PASS</text>
+      <text x="36" y="25" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#F59E0B" letter-spacing="1">SYSTEMS ENGINEER PASS</text>
       <text x="210" y="25" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#64748B" text-anchor="end">2026</text>
 
       <!-- Engineer Avatar Monogram Frame -->
       <g transform="translate(35, 46)">
-        <rect x="0" y="0" width="160" height="135" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
-        <rect x="4" y="4" width="152" height="127" rx="10" fill="#070B16"/>
+        <rect x="0" y="0" width="160" height="135" rx="14" fill="#0E1626" stroke="#1E293B" stroke-width="1.2"/>
+        <rect x="4" y="4" width="152" height="127" rx="10" fill="#080C16"/>
         
         <!-- Center Cyber Emblem -->
-        <circle cx="80" cy="67" r="42" fill="#0D1527" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.4"/>
-        <circle cx="80" cy="67" r="32" fill="#090F1C" stroke="#818CF8" stroke-width="1" stroke-dasharray="4 6"/>
+        <circle cx="80" cy="67" r="42" fill="#0B1220" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.4"/>
+        <circle cx="80" cy="67" r="32" fill="#080D18" stroke="#818CF8" stroke-width="1" stroke-dasharray="4 6"/>
         <text x="80" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle">MJ</text>
       </g>
 
       <!-- Identification Details -->
       <text x="115" y="206" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">Mukesh Joshi</text>
-      <text x="115" y="222" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#38BDF8" text-anchor="middle">FULL-STACK SYSTEMS</text>
+      <text x="115" y="222" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#FBBF24" text-anchor="middle">FULL-STACK SYSTEMS</text>
 
       <line x1="24" y1="234" x2="206" y2="234" stroke="#1E293B" stroke-width="1"/>
 
@@ -106,7 +101,7 @@
         <text x="182" y="12" fill="#FFFFFF" text-anchor="end" font-weight="700">MJ-2026-ENG</text>
 
         <text x="0" y="28" fill="#64748B">LOCATION:</text>
-        <text x="182" y="28" fill="#00F0FF" text-anchor="end" font-weight="700">INDIA / IST</text>
+        <text x="182" y="28" fill="#F59E0B" text-anchor="end" font-weight="700">INDIA / IST</text>
 
         <text x="0" y="44" fill="#64748B">STATUS:</text>
         <text x="182" y="44" fill="#10B981" text-anchor="end" font-weight="700">DEPLOYING</text>
@@ -148,47 +143,47 @@
   </g>
 
   <!-- ================= RIGHT: TELEMETRY & CAPABILITY MATRIX ================= -->
-  <g transform="translate(315, 34)">
+  <g transform="translate(305, 34)">
     
     <!-- Header -->
     <g transform="translate(0, 0)">
-      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF" letter-spacing="2">// OPERATIONS TELEMETRY &amp; METRICS</text>
+      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F59E0B" letter-spacing="1.5">// OPERATIONS TELEMETRY &amp; METRICS</text>
       <g transform="translate(470, 4)">
         <circle cx="0" cy="11" r="3" fill="#10B981" class="live-glow"/>
-        <text x="10" y="14" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#34D399">VERIFIED ARCHIVES</text>
+        <text x="10" y="14" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#34D399">VERIFIED ARCHIVES</text>
       </g>
       <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">Real-World Engineering Impact</text>
     </g>
 
-    <!-- 4 Honest Macro Stat Cards -->
+    <!-- 4 Honest Macro Stat Cards (Width 136 each, gap 12px -> 580px total) -->
     <g transform="translate(0, 60)">
       
       <!-- Card 1: 32+ Public Repos -->
       <g transform="translate(0, 0)">
-        <rect width="134" height="64" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#00F0FF">32+</text>
-        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#38BDF8" letter-spacing="1">PUBLIC REPOS</text>
+        <rect width="136" height="64" rx="14" fill="#0E1626" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#38BDF8">32+</text>
+        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="0.8">PUBLIC REPOS</text>
       </g>
 
       <!-- Card 2: Core Focus -->
-      <g transform="translate(146, 0)">
-        <rect width="134" height="64" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FACC15">Full-Stack</text>
-        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#EAB308" letter-spacing="1">CORE FOCUS</text>
+      <g transform="translate(148, 0)">
+        <rect width="136" height="64" rx="14" fill="#0E1626" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FBBF24">Full-Stack</text>
+        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="0.8">CORE FOCUS</text>
       </g>
 
       <!-- Card 3: Philosophy -->
-      <g transform="translate(292, 0)">
-        <rect width="134" height="64" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#A855F7">Zero-Drift</text>
-        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#A855F7" letter-spacing="1">LEDGER RULES</text>
+      <g transform="translate(296, 0)">
+        <rect width="136" height="64" rx="14" fill="#0E1626" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#818CF8">Zero-Drift</text>
+        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="0.8">LEDGER RULES</text>
       </g>
 
       <!-- Card 4: Status -->
-      <g transform="translate(438, 0)">
-        <rect width="144" height="64" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#10B981">Production</text>
-        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#34D399" letter-spacing="1">SYSTEM READY</text>
+      <g transform="translate(444, 0)">
+        <rect width="138" height="64" rx="14" fill="#0E1626" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="16" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#34D399">Production</text>
+        <text x="16" y="50" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="0.8">SYSTEM READY</text>
       </g>
     </g>
 
@@ -197,13 +192,13 @@
       
       <!-- Left: Proficiency & Architecture Meters -->
       <g transform="translate(0, 0)">
-        <rect width="280" height="216" rx="16" fill="#0C1222" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="1">CORE SYSTEM CAPACITIES</text>
+        <rect width="280" height="216" rx="16" fill="#0A0F1D" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#F59E0B" letter-spacing="1">SYSTEM CAPACITIES</text>
         
-        <!-- Metric 1: Frontend & Micro-interactions -->
+        <!-- Metric 1: Frontend -->
         <g transform="translate(18, 42)">
           <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Frontend Architecture</text>
-          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#00F0FF" text-anchor="end">96%</text>
+          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="end">96%</text>
           <rect x="0" y="16" width="244" height="6" rx="3" fill="#1E293B"/>
           <rect x="0" y="16" width="234" height="6" rx="3" fill="url(#meterCyan)"/>
         </g>
@@ -211,54 +206,63 @@
         <!-- Metric 2: Distributed Backend & APIs -->
         <g transform="translate(18, 76)">
           <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Backend &amp; API Design</text>
-          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#C084FC" text-anchor="end">92%</text>
+          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#818CF8" text-anchor="end">92%</text>
           <rect x="0" y="16" width="244" height="6" rx="3" fill="#1E293B"/>
-          <rect x="0" y="16" width="224" height="6" rx="3" fill="url(#meterPurple)"/>
+          <rect x="0" y="16" width="224" height="6" rx="3" fill="url(#meterIndigo)"/>
         </g>
 
         <!-- Metric 3: Database & SQL Ledger Integrity -->
         <g transform="translate(18, 110)">
           <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Database &amp; Data Integrity</text>
-          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#34D399" text-anchor="end">90%</text>
+          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FBBF24" text-anchor="end">90%</text>
           <rect x="0" y="16" width="244" height="6" rx="3" fill="#1E293B"/>
-          <rect x="0" y="16" width="219" height="6" rx="3" fill="url(#meterEmerald)"/>
+          <rect x="0" y="16" width="219" height="6" rx="3" fill="url(#meterGold)"/>
         </g>
 
         <!-- Metric 4: Kinetic Physics & UI Motion -->
         <g transform="translate(18, 144)">
           <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Kinetic Physics &amp; Motion</text>
-          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#F472B6" text-anchor="end">94%</text>
+          <text x="244" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#34D399" text-anchor="end">94%</text>
           <rect x="0" y="16" width="244" height="6" rx="3" fill="#1E293B"/>
-          <rect x="0" y="16" width="229" height="6" rx="3" fill="url(#meterPink)"/>
+          <rect x="0" y="16" width="229" height="6" rx="3" fill="url(#meterEmerald)"/>
         </g>
         
         <text x="18" y="196" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B">BENCHMARK: SUB-SECOND LATENCY &amp; 0 CLS</text>
       </g>
 
-      <!-- Right: Production Deployments Showcase -->
+      <!-- Right: Production Deployments Showcase (CLEANLY WRAPPED - NO OVERFLOW) -->
       <g transform="translate(294, 0)">
-        <rect width="288" height="216" rx="16" fill="#0C1222" stroke="#1E293B" stroke-width="1.2"/>
-        <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#A855F7" letter-spacing="1">FLAGSHIP PRODUCTION REPOS</text>
+        <rect width="288" height="216" rx="16" fill="#0A0F1D" stroke="#1E293B" stroke-width="1.2"/>
+        <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#818CF8" letter-spacing="1">FLAGSHIP PRODUCTION REPOS</text>
         
         <!-- Project 1: FlowStock -->
-        <g transform="translate(18, 44)">
-          <circle cx="4" cy="6" r="3.5" fill="#00F0FF"/>
+        <g transform="translate(18, 42)">
+          <circle cx="4" cy="6" r="3.5" fill="#38BDF8"/>
           <text x="14" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">FlowStock</text>
-          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Financial-grade double-entry inventory ledger</text>
+          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10" fill="#94A3B8">
+            <tspan x="14" dy="0">Financial-grade double-entry inventory ledger</tspan>
+            <tspan x="14" dy="13">with automated GST tax invoicing.</tspan>
+          </text>
         </g>
 
         <!-- Project 2: ColabIDE -->
         <g transform="translate(18, 96)">
-          <circle cx="4" cy="6" r="3.5" fill="#8B5CF6"/>
+          <circle cx="4" cy="6" r="3.5" fill="#818CF8"/>
           <text x="14" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">ColabIDE</text>
-          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Real-time collaborative code editor &amp; virtual runtime</text>
+          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10" fill="#94A3B8">
+            <tspan x="14" dy="0">Real-time collaborative code editor with</tspan>
+            <tspan x="14" dy="13">low-latency live WebSocket synchronization.</tspan>
+          </text>
         </g>
 
         <!-- Project 3: MYPortfolio -->
-        <g transform="translate(18, 148)">
-          <circle cx="4" cy="6" r="3.5" fill="#10B981"/>
+        <g transform="translate(18, 150)">
+          <circle cx="4" cy="6" r="3.5" fill="#FBBF24"/>
           <text x="14" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">MYPortfolio</text>
-          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Cinematic interactive showcase with 60 FPS motion</text>
+          <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10" fill="#94A3B8">
+            <tspan x="14" dy="0">Cinematic interactive web showcase</tspan>
+            <tspan x="14" dy="13">engineered with 60 FPS kinetic physics.</tspan>
+          </text>
         </g>
       </g>
 

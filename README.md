@@ -1,22 +1,22 @@
 <div align="center">
 
 <!-- 1. LIVE SYSTEM TELEMETRY MARQUEE -->
-<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/status-marquee.svg?v=2.0" width="940" alt="System Operational Status Bar — Mukesh Joshi" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/status-marquee.svg?v=3.0" width="940" alt="System Operational Status Bar — Mukesh Joshi" />
 
 <br/><br/>
 
 <!-- 2. EXECUTIVE HERO BENTO CARD -->
-<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/executive-hero.svg?v=2.0" width="940" alt="Mukesh Joshi — Systems Architect & Full-Stack Engineer" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/executive-hero.svg?v=3.0" width="940" alt="Mukesh Joshi — Systems Architect & Full-Stack Engineer" />
 
 <br/><br/>
 
 <!-- 3. TECHNICAL ARSENAL & SYSTEMS MATRIX -->
-<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/tech-arsenal.svg?v=2.0" width="940" alt="Technical Arsenal & Production Capabilities" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/tech-arsenal.svg?v=3.0" width="940" alt="Technical Arsenal & Production Capabilities" />
 
 <br/><br/>
 
 <!-- 4. OPERATIONS TELEMETRY & FIELD METRICS -->
-<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/telemetry-dashboard.svg?v=2.0" width="940" alt="Operations Telemetry & Verified Engineering Metrics" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/telemetry-dashboard.svg?v=3.0" width="940" alt="Operations Telemetry & Verified Engineering Metrics" />
 
 </div>
 
@@ -49,11 +49,11 @@
   <tr>
     <td width="55%" align="center" valign="middle">
       <!-- 3D Contribution Village (Auto-rebuilt daily by GitHub Action) -->
-      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Mukesh's Contribution Telemetry" onerror="this.src='https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/competency-radar.svg?v=2.0'"/>
+      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Mukesh's Contribution Telemetry" onerror="this.src='https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/competency-radar.svg?v=3.0'"/>
     </td>
     <td width="45%" align="center" valign="middle">
       <!-- Full-Stack Competency Radar -->
-      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/competency-radar.svg?v=2.0" width="100%" alt="Full-Stack Architectural Competency Radar" />
+      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/competency-radar.svg?v=3.0" width="100%" alt="Full-Stack Architectural Competency Radar" />
     </td>
   </tr>
 </table>
@@ -62,7 +62,7 @@
 
 <!-- 7. DIRECT COMMUNICATIONS TERMINAL -->
 <a href="mailto:joshimukesh2005@gmail.com">
-  <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/dispatch-terminal.svg?v=2.0" width="940" alt="Direct Communications Console — Click to Email Mukesh" />
+  <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/dispatch-terminal.svg?v=3.0" width="940" alt="Direct Communications Console — Click to Email Mukesh" />
 </a>
 
 <br/>

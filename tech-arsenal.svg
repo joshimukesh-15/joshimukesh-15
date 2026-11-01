@@ -1,35 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" width="940" height="360">
   <defs>
-    <linearGradient id="stackBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050711"/>
-      <stop offset="50%" stop-color="#0A0E1F"/>
+    <!-- Deep Obsidian Canvas -->
+    <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070F"/>
+      <stop offset="50%" stop-color="#090E1D"/>
       <stop offset="100%" stop-color="#04060C"/>
     </linearGradient>
 
-    <linearGradient id="stackBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7"/>
+    <!-- Champagne Gold & Titanium Border -->
+    <linearGradient id="techBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.75"/>
       <stop offset="50%" stop-color="#818CF8" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#34D399" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.75"/>
     </linearGradient>
 
-    <linearGradient id="pillBlue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.1"/>
+    <!-- Pill Gradients: Champagne & Titanium -->
+    <linearGradient id="pillIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3730A3" stop-opacity="0.08"/>
     </linearGradient>
 
-    <linearGradient id="pillPurple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#6D28D9" stop-opacity="0.1"/>
+    <linearGradient id="pillGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#92400E" stop-opacity="0.08"/>
     </linearGradient>
 
-    <linearGradient id="pillGreen" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#047857" stop-opacity="0.1"/>
-    </linearGradient>
-
-    <linearGradient id="pillAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#B45309" stop-opacity="0.1"/>
+    <linearGradient id="pillEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#065F46" stop-opacity="0.08"/>
     </linearGradient>
 
     <filter id="busGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -42,177 +40,168 @@
         0% { stroke-dashoffset: 400; }
         100% { stroke-dashoffset: 0; }
       }
-      @keyframes pulseChip {
-        0%, 100% { opacity: 0.8; }
-        50% { opacity: 1; filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.6)); }
-      }
       .signal-line {
         stroke-dasharray: 12 16;
         animation: busSignal 6s linear infinite;
-      }
-      .chip-glow {
-        animation: pulseChip 3s ease-in-out infinite;
       }
     </style>
   </defs>
 
   <!-- Shell Container -->
-  <rect x="1" y="1" width="938" height="358" rx="24" fill="url(#stackBg)"/>
-  <rect x="1" y="1" width="938" height="358" rx="24" fill="none" stroke="url(#stackBorder)" stroke-width="1.2"/>
+  <rect x="1" y="1" width="938" height="358" rx="26" fill="url(#techBg)"/>
+  <rect x="1" y="1" width="938" height="358" rx="26" fill="none" stroke="url(#techBorder)" stroke-width="1.2"/>
 
   <!-- Header Block -->
   <g transform="translate(42, 34)">
-    <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF" letter-spacing="2">// TECHNICAL ARSENAL &amp; SYSTEM CAPABILITIES</text>
-    <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="-0.3">Core Engineering Toolchain</text>
-    <text x="0" y="66" font-family="'Inter', sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Production-tested technologies deployed across high-availability architectures and modern web apps.</text>
+    <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F59E0B" letter-spacing="1.5">// TECHNICAL ARSENAL &amp; SYSTEM CAPABILITIES</text>
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="23" font-weight="800" fill="#FFFFFF" letter-spacing="-0.3">Core Engineering Toolchain</text>
+    <text x="0" y="66" font-family="'Inter', sans-serif" font-size="12.5" font-weight="400" fill="#94A3B8">Production-tested technologies deployed across high-availability architectures and modern web apps.</text>
   </g>
 
-  <!-- ================= 4 ARCHITECTURAL CATEGORIES ================= -->
+  <!-- ================= 3 ARCHITECTURAL CATEGORIES ================= -->
   <g transform="translate(42, 126)">
     
     <!-- Category 1: Frontend & UI Core -->
     <g transform="translate(0, 0)">
-      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="1">01 / CLIENT &amp; INTERFACES</text>
+      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#818CF8" letter-spacing="1">01 / CLIENT &amp; INTERFACES</text>
       
-      <!-- Tech Pills -->
+      <!-- Tech Pills (Carefully spaced to stay well within 856px) -->
       <g transform="translate(0, 30)">
-        <!-- React -->
+        <!-- React 19 -->
         <g transform="translate(0, 0)">
-          <rect width="100" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="50" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">React 19</text>
+          <rect width="96" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="48" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">React 19</text>
         </g>
         <!-- TypeScript -->
-        <g transform="translate(108, 0)">
-          <rect width="112" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="56" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">TypeScript</text>
+        <g transform="translate(106, 0)">
+          <rect width="108" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="54" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">TypeScript</text>
         </g>
         <!-- Next.js -->
-        <g transform="translate(228, 0)">
-          <rect width="94" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="47" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">Next.js</text>
+        <g transform="translate(224, 0)">
+          <rect width="90" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="45" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">Next.js</text>
         </g>
         <!-- Tailwind CSS -->
-        <g transform="translate(330, 0)">
-          <rect width="118" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="59" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">Tailwind CSS</text>
+        <g transform="translate(324, 0)">
+          <rect width="114" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="57" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">Tailwind CSS</text>
         </g>
         <!-- Framer Motion -->
-        <g transform="translate(456, 0)">
-          <rect width="130" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="65" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">Framer Motion</text>
+        <g transform="translate(448, 0)">
+          <rect width="124" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="62" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">Framer Motion</text>
         </g>
         <!-- Vite -->
-        <g transform="translate(594, 0)">
-          <rect width="80" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="40" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">Vite</text>
+        <g transform="translate(582, 0)">
+          <rect width="78" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="39" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">Vite</text>
         </g>
-        <!-- Redux / Zustand -->
-        <g transform="translate(682, 0)">
-          <rect width="104" height="34" rx="8" fill="url(#pillBlue)" stroke="#0284C7" stroke-width="1.2"/>
-          <text x="52" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E0F2FE" text-anchor="middle">State Mesh</text>
+        <!-- State Mesh -->
+        <g transform="translate(670, 0)">
+          <rect width="108" height="34" rx="8" fill="url(#pillIndigo)" stroke="#6366F1" stroke-width="1.2"/>
+          <text x="54" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EEF2FF" text-anchor="middle">State Mesh</text>
         </g>
       </g>
     </g>
 
     <!-- Category 2: Backend & Distributed Services -->
     <g transform="translate(0, 88)">
-      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#A855F7" letter-spacing="1">02 / BACKEND &amp; DISTRIBUTED ENGINES</text>
+      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#FBBF24" letter-spacing="1">02 / BACKEND &amp; DISTRIBUTED ENGINES</text>
       
       <!-- Tech Pills -->
       <g transform="translate(0, 30)">
         <!-- Python -->
         <g transform="translate(0, 0)">
-          <rect width="90" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="45" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">Python</text>
+          <rect width="86" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="43" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">Python</text>
         </g>
         <!-- FastAPI -->
-        <g transform="translate(98, 0)">
-          <rect width="98" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="49" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">FastAPI</text>
+        <g transform="translate(96, 0)">
+          <rect width="94" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="47" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">FastAPI</text>
         </g>
         <!-- Node.js -->
-        <g transform="translate(204, 0)">
-          <rect width="98" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="49" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">Node.js</text>
+        <g transform="translate(200, 0)">
+          <rect width="94" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="47" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">Node.js</text>
         </g>
         <!-- Express -->
-        <g transform="translate(310, 0)">
-          <rect width="98" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="49" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">Express</text>
+        <g transform="translate(304, 0)">
+          <rect width="94" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="47" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">Express</text>
         </g>
         <!-- WebSockets -->
-        <g transform="translate(416, 0)">
-          <rect width="118" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="59" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">WebSockets</text>
+        <g transform="translate(408, 0)">
+          <rect width="114" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="57" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">WebSockets</text>
         </g>
         <!-- RESTful Architecture -->
-        <g transform="translate(542, 0)">
-          <rect width="134" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="67" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">RESTful APIs</text>
+        <g transform="translate(532, 0)">
+          <rect width="128" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="64" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">RESTful APIs</text>
         </g>
-        <!-- Microservices -->
-        <g transform="translate(684, 0)">
-          <rect width="116" height="34" rx="8" fill="url(#pillPurple)" stroke="#7C3AED" stroke-width="1.2"/>
-          <text x="58" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#F3E8FF" text-anchor="middle">API Routing</text>
+        <!-- API Routing -->
+        <g transform="translate(670, 0)">
+          <rect width="110" height="34" rx="8" fill="url(#pillGold)" stroke="#D97706" stroke-width="1.2"/>
+          <text x="55" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FEF3C7" text-anchor="middle">API Routing</text>
         </g>
       </g>
     </g>
 
     <!-- Category 3: Database & DevOps Integrity -->
     <g transform="translate(0, 176)">
-      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">03 / DATA PERSISTENCE, DEVOPS &amp; TOOLING</text>
+      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#34D399" letter-spacing="1">03 / DATA PERSISTENCE, DEVOPS &amp; TOOLING</text>
       
       <!-- Tech Pills -->
       <g transform="translate(0, 30)">
         <!-- PostgreSQL -->
         <g transform="translate(0, 0)">
-          <rect width="115" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="57.5" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">PostgreSQL</text>
+          <rect width="110" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="55" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">PostgreSQL</text>
         </g>
         <!-- Prisma ORM -->
-        <g transform="translate(123, 0)">
-          <rect width="108" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="54" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Prisma ORM</text>
+        <g transform="translate(120, 0)">
+          <rect width="104" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="52" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Prisma ORM</text>
         </g>
         <!-- Docker -->
-        <g transform="translate(239, 0)">
-          <rect width="90" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="45" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Docker</text>
+        <g transform="translate(234, 0)">
+          <rect width="86" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="43" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Docker</text>
         </g>
         <!-- GitHub Actions -->
-        <g transform="translate(337, 0)">
-          <rect width="138" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="69" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">GitHub Actions</text>
+        <g transform="translate(330, 0)">
+          <rect width="132" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="66" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">GitHub Actions</text>
         </g>
         <!-- Linux -->
-        <g transform="translate(483, 0)">
-          <rect width="84" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="42" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Linux</text>
+        <g transform="translate(472, 0)">
+          <rect width="80" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="40" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Linux</text>
         </g>
-        <!-- Git & Version Control -->
-        <g transform="translate(575, 0)">
-          <rect width="104" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="52" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Git CI/CD</text>
+        <!-- Git CI/CD -->
+        <g transform="translate(562, 0)">
+          <rect width="98" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="49" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Git CI/CD</text>
         </g>
         <!-- Postman -->
-        <g transform="translate(687, 0)">
-          <rect width="94" height="34" rx="8" fill="url(#pillGreen)" stroke="#059669" stroke-width="1.2"/>
-          <text x="47" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Postman</text>
+        <g transform="translate(670, 0)">
+          <rect width="90" height="34" rx="8" fill="url(#pillEmerald)" stroke="#059669" stroke-width="1.2"/>
+          <text x="45" y="21.5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECFDF5" text-anchor="middle">Postman</text>
         </g>
       </g>
     </g>
 
   </g>
 
-  <!-- Live Bottom Bus / Circuit Line Animation -->
+  <!-- Live Circuit Bus Line -->
   <g transform="translate(42, 335)">
     <line x1="0" y1="0" x2="856" y2="0" stroke="#1E293B" stroke-width="2"/>
-    <line class="signal-line" x1="0" y1="0" x2="856" y2="0" stroke="#00F0FF" stroke-width="2" filter="url(#busGlow)"/>
-    
-    <!-- Micro Status Nodes -->
-    <circle cx="0" cy="0" r="3" fill="#00F0FF"/>
-    <circle cx="280" cy="0" r="3" fill="#8B5CF6"/>
+    <line class="signal-line" x1="0" y1="0" x2="856" y2="0" stroke="#F59E0B" stroke-width="2" filter="url(#busGlow)"/>
+    <circle cx="0" cy="0" r="3" fill="#F59E0B"/>
+    <circle cx="280" cy="0" r="3" fill="#818CF8"/>
     <circle cx="560" cy="0" r="3" fill="#10B981"/>
-    <circle cx="856" cy="0" r="3" fill="#38BDF8"/>
+    <circle cx="856" cy="0" r="3" fill="#FBBF24"/>
   </g>
 </svg>
