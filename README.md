@@ -1,20 +1,20 @@
 <div align="center">
 
 <!-- 1. WALKING CHIBI SQUAD: YUJI, GOJO & MEGUMI -->
-<img src="./sprites.svg" width="940" alt="Satoru Gojo, Yuji Itadori, and Megumi Fushiguro walking" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/sprites.svg" width="940" alt="Satoru Gojo, Yuji Itadori, and Megumi Fushiguro walking" />
 
 <!-- 2. HERO BENTO CARD: SATORU GOJO — THE STRONGEST -->
-<img src="./hero.svg" width="940" alt="Throughout Heaven and Earth, I alone build the strongest — Mukesh Joshi" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/hero.svg" width="940" alt="Throughout Heaven and Earth, I alone build the strongest — Mukesh Joshi" />
 
 <br/>
 
 <!-- 3. CURSED TECHNIQUE ARSENAL: HOLLOW PURPLE BEAM -->
-<img src="./stack.svg" width="940" alt="Cursed Technique Arsenal — Tools I Dominate With" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/stack.svg" width="940" alt="Cursed Technique Arsenal — Tools I Dominate With" />
 
 <br/>
 
 <!-- 4. JUJUTSU HIGH SPECIAL GRADE DOSSIER & LIVE STATS -->
-<img src="./id-dashboard.svg" width="940" alt="Tokyo Jujutsu High — Stats From The Field" />
+<img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/id-dashboard.svg" width="940" alt="Tokyo Jujutsu High — Stats From The Field" />
 
 </div>
 
@@ -47,11 +47,11 @@
   <tr>
     <td width="55%" align="center" valign="middle">
       <!-- Generated automatically daily by .github/workflows/profile-3d.yml -->
-      <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Mukesh's 3D Contribution Village" onerror="this.src='./radar-chart.svg'"/>
+      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Mukesh's 3D Contribution Village" onerror="this.src='https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/radar-chart.svg'"/>
     </td>
     <td width="45%" align="center" valign="middle">
       <!-- Special Grade Combat Radar -->
-      <img src="./radar-chart.svg" width="100%" alt="Special Grade Combat Radar" />
+      <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/radar-chart.svg" width="100%" alt="Special Grade Combat Radar" />
     </td>
   </tr>
 </table>
@@ -60,7 +60,7 @@
 
 <!-- 7. JOIN THE DOMAIN / CONTACT TERMINAL -->
 <a href="mailto:joshimukesh2005@gmail.com">
-  <img src="./connect.svg" width="940" alt="Domain Expansion: Unlimited Void — Let's build something impossible" />
+  <img src="https://cdn.jsdelivr.net/gh/joshimukesh-15/joshimukesh-15@main/connect.svg" width="940" alt="Domain Expansion: Unlimited Void — Let's build something impossible" />
 </a>
 
 <br/>
