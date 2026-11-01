@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mukesh Joshi — GitHub Profile Preview (JJK Gojo Satoru Theme)</title>
+  <title>Mukesh Joshi — Executive GitHub Profile Preview</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #05070d;
-      color: #e5e7eb;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #04060c;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
@@ -20,60 +20,71 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 28px;
+      gap: 32px;
     }
     .badge-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 20px;
-      background: #0B0E1B;
-      border: 1px solid #1E2A4A;
-      border-radius: 12px;
+      padding: 14px 24px;
+      background: #090e1d;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
       font-family: monospace;
       font-size: 13px;
     }
-    .badge-bar span { color: #00F0FF; font-weight: bold; }
+    .badge-bar span { color: #00f0ff; font-weight: bold; }
     table {
       width: 100%;
       border-collapse: collapse;
-      background: #0C101E;
-      border-radius: 14px;
+      background: #080d1a;
+      border-radius: 16px;
       overflow: hidden;
-      border: 1px solid #1E2A4A;
+      border: 1px solid #1e293b;
       margin-top: 10px;
     }
     th, td {
-      padding: 14px 18px;
+      padding: 16px 20px;
       text-align: left;
-      border-bottom: 1px solid #1A2236;
+      border-bottom: 1px solid #141e33;
       font-size: 13.5px;
     }
     th {
-      background: #11172B;
-      color: #00F0FF;
+      background: #0d1527;
+      color: #38bdf8;
       font-family: monospace;
       letter-spacing: 1px;
     }
     code {
-      background: #1A2236;
-      padding: 2px 6px;
+      background: #131c31;
+      padding: 3px 7px;
       border-radius: 6px;
-      font-size: 11.5px;
-      color: #00F0FF;
+      font-size: 11px;
+      color: #38bdf8;
       margin-right: 4px;
       font-family: monospace;
+      border: 1px solid #1e293b;
     }
-    a { color: #00F0FF; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
+    a { color: #38bdf8; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; color: #00f0ff; }
     .grid-2 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
       gap: 20px;
       align-items: center;
     }
     @media (max-width: 768px) {
       .grid-2 { grid-template-columns: 1fr; }
+    }
+    .card-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .card-wrap img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
     }
   </style>
 </head>
@@ -81,94 +92,85 @@
 
   <div class="container">
     <div class="badge-bar">
-      <div>PROFILE PREVIEW: <span>@joshimukesh-15 / Jujutsu Kaisen — Satoru Gojo (Special Grade)</span></div>
-      <div style="color: #A855F7;">Status: Limitless / Six Eyes Active</div>
+      <div>PROFILE MODE: <span>@joshimukesh-15 / Executive Systems &amp; Full-Stack Architecture</span></div>
+      <div style="color: #10b981;">● Status: Production Ready</div>
     </div>
 
-    <!-- 1. Sprites -->
-    <div>
-      <img src="./sprites.svg" width="100%" alt="Chibi Squad" />
+    <!-- 1. Telemetry Bar -->
+    <div class="card-wrap">
+      <img src="./sprites.svg" width="940" alt="Telemetry Bar" />
     </div>
 
     <!-- 2. Hero Card -->
-    <div>
-      <img src="./hero.svg" width="100%" alt="Hero Card" />
+    <div class="card-wrap">
+      <img src="./hero.svg" width="940" alt="Executive Hero Card" />
     </div>
 
-    <!-- 3. Tech Stack Beam -->
-    <div>
-      <img src="./stack.svg" width="100%" alt="Tech Stack" />
+    <!-- 3. Technical Arsenal -->
+    <div class="card-wrap">
+      <img src="./stack.svg" width="940" alt="Technical Arsenal" />
     </div>
 
-    <!-- 4. ID Dashboard -->
-    <div>
-      <img src="./id-dashboard.svg" width="100%" alt="ID Dashboard" />
+    <!-- 4. Operations Telemetry Dashboard -->
+    <div class="card-wrap">
+      <img src="./id-dashboard.svg" width="940" alt="Operations Telemetry" />
     </div>
 
     <!-- 5. Repositories Table -->
     <div>
-      <h3 style="font-family: monospace; color: #00F0FF; margin-bottom: 8px;">⚔️ // SPECIAL GRADE MISSIONS & ARTIFACTS</h3>
+      <h3 style="font-family: monospace; color: #00F0FF; margin-bottom: 8px;">⚡ // FEATURED PRODUCTION ARCHITECTURES</h3>
       <table>
         <thead>
           <tr>
-            <th>Curse / Repository</th>
-            <th>Mission Synopsis & Architecture</th>
-            <th>Cursed Tools</th>
-            <th>Rank</th>
+            <th>System / Repository</th>
+            <th>Architectural Synopsis &amp; Core Functionality</th>
+            <th>Tech Stack</th>
+            <th style="text-align: center;">Status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>🤞 <b>FlowStock</b></td>
-            <td>Zero-drift financial inventory ledger with multi-carrier API mesh & automated GST invoices.</td>
+            <td>📦 <b><a href="https://github.com/joshimukesh-15/FlowStock">FlowStock</a></b></td>
+            <td>Financial-grade warehouse inventory ledger with double-entry stock bookkeeping &amp; automated GST invoices.</td>
             <td><code>Python</code><code>FastAPI</code><code>React</code><code>Postgres</code></td>
-            <td style="color: #EF4444; font-weight: bold;">Special Grade ⭐</td>
+            <td style="text-align: center; color: #10b981; font-weight: bold;">Production 🟢</td>
           </tr>
           <tr>
-            <td>⚡ <b>ColabIDE</b></td>
-            <td>Real-time collaborative code editor with WebSocket live cursors & virtual runtime.</td>
-            <td><code>TypeScript</code><code>React</code><code>Node.js</code></td>
-            <td style="color: #A855F7; font-weight: bold;">Grade 1 ⭐</td>
+            <td>⚡ <b><a href="https://github.com/joshimukesh-15/ColabIDE">ColabIDE</a></b></td>
+            <td>Real-time collaborative code editor with low-latency WebSocket sync &amp; virtual runtime execution.</td>
+            <td><code>TypeScript</code><code>React</code><code>Node.js</code><code>WebSockets</code></td>
+            <td style="text-align: center; color: #10b981; font-weight: bold;">Active 🟢</td>
           </tr>
           <tr>
-            <td>🌌 <b>MYPortfolio</b></td>
-            <td>Cinematic interactive web experience with scroll-driven anime motion & storytelling.</td>
-            <td><code>HTML5</code><code>CSS3</code><code>JS</code><code>Framer</code></td>
-            <td style="color: #00F0FF; font-weight: bold;">Grade 1 ⭐</td>
+            <td>🌐 <b><a href="https://github.com/joshimukesh-15/MYPortfolio">MYPortfolio</a></b></td>
+            <td>Cinematic interactive web experience with 60 FPS motion, responsive telemetry, and zero layout shifts.</td>
+            <td><code>HTML5</code><code>CSS3</code><code>JavaScript</code><code>Framer</code></td>
+            <td style="text-align: center; color: #10b981; font-weight: bold;">Live 🟢</td>
           </tr>
           <tr>
-            <td>🛡️ <b>P2-10-employee-crud</b></td>
-            <td>Enterprise role-based access employee management platform with audit trails.</td>
-            <td><code>JavaScript</code><code>Express</code><code>REST API</code></td>
-            <td style="color: #94A3B8;">Grade 2 ⭐</td>
+            <td>🛡️ <b><a href="https://github.com/joshimukesh-15/P2-10-employee-crud">P2-10-employee-crud</a></b></td>
+            <td>Enterprise personnel management engine with RBAC security, audit trails, and REST settlement.</td>
+            <td><code>JavaScript</code><code>Express</code><code>Node.js</code></td>
+            <td style="text-align: center; color: #10b981; font-weight: bold;">Verified 🟢</td>
           </tr>
           <tr>
-            <td>📦 <b>P2-08-update-product</b></td>
-            <td>High-velocity SKU inventory update engine with optimistic mutations.</td>
+            <td>🔄 <b><a href="https://github.com/joshimukesh-15/P2-08-update-product">P2-08-update-product</a></b></td>
+            <td>High-velocity product lifecycle mutation engine with optimistic UI updates and validation guards.</td>
             <td><code>JavaScript</code><code>DOM</code><code>CSS3</code></td>
-            <td style="color: #94A3B8;">Grade 2 ⭐</td>
+            <td style="text-align: center; color: #10b981; font-weight: bold;">Verified 🟢</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- 6. Contribution Village & Radar -->
-    <div class="grid-2">
-      <div style="background: #0C101E; border: 1.2px solid #1E2A4A; border-radius: 18px; padding: 20px; text-align: center;">
-        <h4 style="font-family: monospace; color: #00F0FF; margin-bottom: 8px;">🏛️ // 3D CONTRIBUTION VILLAGE</h4>
-        <p style="font-size: 12px; color: #94A3B8; margin-bottom: 12px;">Automated 3D skyline generated daily by GitHub Actions</p>
-        <div style="background: #060913; border: 1px dashed #1E2A4A; border-radius: 12px; height: 180px; display: flex; align-items: center; justify-content: center; color: #00F0FF; font-family: monospace; font-size: 13px;">
-          [ 3D Skyline City Render: profile-night-rainbow.svg ]
-        </div>
-      </div>
-      <div>
-        <img src="./radar-chart.svg" width="100%" alt="Combat Radar" />
-      </div>
+    <!-- 6. Architectural Radar -->
+    <div style="display: flex; justify-content: center;">
+      <img src="./radar-chart.svg" width="480" alt="Architectural Radar" />
     </div>
 
-    <!-- 7. Join the Domain -->
-    <div>
-      <img src="./connect.svg" width="100%" alt="Connect Card" />
+    <!-- 7. Communications Terminal -->
+    <div class="card-wrap">
+      <img src="./connect.svg" width="940" alt="Communications Console" />
     </div>
 
   </div>
